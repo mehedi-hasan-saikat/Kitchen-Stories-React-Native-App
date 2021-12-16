@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FlatList } from "react-native";
 import { View, ActivityIndicator, Dimensions } from "react-native";
-import Carousel from "react-native-snap-carousel";
 
 import Header from "./Header";
 import RecipeCard from "./RecipeCard";
@@ -26,14 +25,14 @@ function Results({ route, navigation }) {
         setData(fetchedData.hits);
         setLoading(false);
       } catch (e) {
-        console.log(e);
+      
       }
     };
     fetchData();
   }, []);
 
   return (
-    <View style={{ flex: 1, backgroundColor: "white" }}>
+    <View style={{ flex: 1, backgroundColor: "black" }}>
       {!loading && <Header navigation={navigation} />}
       {loading ? (
         <View
@@ -46,30 +45,12 @@ function Results({ route, navigation }) {
           <ActivityIndicator size="large" color="grey" />
         </View>
       ) : (
-        
-       
-        
       
-
-
-
         <FlatList
           data={data}
-
-          numColumns={3}
-          // layout={"stack"}
-          // layoutCardOffset={18}
+          numColumns={2}
           renderItem={RecipeCard}
-          // sliderWidth={width}
-          // itemWidth={width}
         />
-
-
-      
-
-       
-
-
       )}
     </View>
   );

@@ -25,11 +25,11 @@ function Home({ navigation }) {
 
   return (
     <View
-      style={{ flex: 1, backgroundColor: "#EEE9D0", justifyContent: "center" }}
+      style={{ flex: 1, backgroundColor: "black", justifyContent: "center" }}
     >
       <View style={styles.imageContainer}>
         <Image
-          source={require("../assets/food-3.png")}
+          source={require("../assets/Logo.png")}
           style={styles.image}
         ></Image>
       </View>
@@ -57,6 +57,12 @@ function Home({ navigation }) {
           <Text style={styles.btnText}>Search</Text>
         </TouchableOpacity>
       </View>
+
+      <View style={styles.textContainer}>
+        <Text style={styles.textSubheading}>
+        ©2020 Kitchen Stories. All rights reserved,saikat-2022        </Text>
+      </View>
+
     </View>
   );
 }
@@ -70,17 +76,17 @@ const styles = StyleSheet.create({
     width: 150,
   },
   textContainer: {
-    marginTop: 50,
+    marginTop: 10,
     alignItems: "center",
   },
   textHeading: {
     fontWeight: "bold",
-    fontSize: 25,
-    color: "#515A5A",
+    fontSize: 35,
+    color: "white",
   },
   textSubheading: {
     marginTop: 5,
-    color: "#515A5A",
+    color: "white",
   },
   inputContainer: {
     marginTop: 50,
@@ -90,13 +96,13 @@ const styles = StyleSheet.create({
   input: {
     maxWidth: 500,
     width: "80%",
-    borderColor: "#515A5A",
+    borderColor: "white",
     borderWidth: 3,
     borderRadius: 30,
     height: 50,
     align:"center",
     paddingLeft: 20,
-    color: "#515A5A",
+    color: "white",
     justifyContent: "center",
 
   },

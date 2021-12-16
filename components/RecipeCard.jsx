@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
 const RecipeCard = ({ item, index }) => {
-  const color = ["#fccbcb", "#c8d5b9", "#d0e8f2", "#d8ac9c", "#ffb26b"];
+  const color = ["#fcabcb", "#c8b5b9", "#d0e9f2", "#d8bc9c", "#ffb27b"];
 
   return (
     <ScrollView
@@ -14,7 +14,7 @@ const RecipeCard = ({ item, index }) => {
       </View>
       <Text style={styles.topText}>{item.recipe.label}</Text>
 
-      <Text style={styles.midText}>Quantity :{item.recipe.ingredients.quantity} </Text>
+   
       
       <Text style={styles.midText}>Ingredients</Text>
       <View style={styles.bottomTextContainer}>
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     marginVertical: 20,
     borderRadius: 10,
+    boxShadow: "5px 10px #888888",
   },
   topText: {
     marginHorizontal: 20,
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
     width: 250,
     borderRadius: 125,
     borderWidth: 3,
-    borderColor: "white",
+    borderColor: "blue",
   },
   midText: {
     marginHorizontal: 20,
