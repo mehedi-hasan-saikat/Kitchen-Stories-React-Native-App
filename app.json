@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Kitchen Stories",
-    "slug": "Kitchen Stories",
+    "name": "Kitchen-Stories",
+    "slug": "Kitchen-Stories",
     "platforms": [
       "ios",
       "android",
@@ -23,6 +23,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
